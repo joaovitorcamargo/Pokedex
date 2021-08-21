@@ -82,8 +82,8 @@ export default {
 }
 .type-card {
   border: 0px solid;
-  padding: 3px;
-  border-radius: 5px;
+  padding: 4px;
+  border-radius: 10px;
   font-weight: bold;
   color: white;
   background-color: rgba(17, 17, 17, 0.322);
