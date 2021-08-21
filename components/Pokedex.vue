@@ -1,8 +1,16 @@
 <template>
-  <div>
-    <div v-for="pokemon in pokemons" :key="pokemon.id">
-      <img :src="maskZeros(pokemon.id, 3)" alt="" />
-      {{ pokemon.name.english }}
+  <div class="container">
+    <div class="Logo">
+      <img src="img/Logo.png" alt="" />
+    </div>
+    <div class="row">
+      <div
+        v-for="pokemon in pokemons"
+        :key="pokemon.id"
+        class="col-lg-3 card-padding"
+      >
+        <Card :pokemon="pokemon" />
+      </div>
     </div>
   </div>
 </template>
@@ -27,3 +35,18 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.Logo {
+  text-align: center;
+}
+.Logo > img {
+  width: 320px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+</style>

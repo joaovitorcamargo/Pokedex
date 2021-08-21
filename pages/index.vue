@@ -1,5 +1,7 @@
 <template>
-  <Pokedex :pokemons="pokemons" />
+  <div class="background">
+    <Pokedex :pokemons="pokemons" />
+  </div>
 </template>
 
 <script>
@@ -32,3 +34,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.background {
+  background-repeat: repeat-y repeat-x;
+  background-image: url("static/img/Background.png");
+}
+</style>
